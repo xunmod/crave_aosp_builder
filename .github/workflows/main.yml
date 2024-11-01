@@ -449,7 +449,6 @@ jobs:
         crave ${{ secrets.CRAVE_FLAGS }} run --no-patch ${PAID} ${CLEAN} -- "rm -rf device/GIONEE device/cyanogen/mt6735-common vendor/GIONEE ${{ github.event.inputs.REMOVALS }} && \
         # Clone local_manifests repository
         $BUILD_DIFFERENT_ROM ; \
-        #$LOCAL_MANIFEST && \
         git clone --single-branch -b cm-14.1 --depth 1 https://github.com/LineageOS/android_device_cyanogen_mt6735-common device/cyanogen/mt6735-common; \
         git clone --single-branch -b cm-14.1 --depth 1 https://github.com/xunmod/android_device_GIONEE_gionee6735_65c_l1 device/GIONEE/gionee6735_65c_l1; \
         git clone --single-branch -b cm-12.1 --depth 1 https://github.com/xunmod/android_vendor_GIONEE_gionee6735_65c_l1 vendor/GIONEE/gionee6735_65c_l1; \
